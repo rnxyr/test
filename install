@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script Installer
-# Dibuat oleh: HokageLegend9999
+# Dibuat oleh: RENDY STORE
 
 # --- Definisi Warna ---
 NC='\033[0m' # No Color
@@ -91,7 +91,7 @@ while true; do
         break
     else
         echo -e "${red}❌ Client Name atau IP ($IP_VPS) tidak terdaftar!${NC}"
-        echo -e "➥ Hubungi admin ${CYAN}「 ✦ @HokageLegend ✦ 」${NC}"
+        echo -e "➥ Hubungi admin ${CYAN}「 ✦ RENDY STORE ✦ 」${NC}"
         # Hapus file installer jika validasi gagal
         rm -f /root/home 
         exit 1
@@ -115,6 +115,8 @@ send_telegram_message() {
     MESSAGE=$1
     BUTTON1_URL="https://wa.me/"
     BUTTON_TEXT1="Whatsapp 🐳"
+    BUTTON2_URL="https://wa.me/"
+    BUTTON_TEXT2="Whatsapp 🐳"
 
     RESPONSE=$(curl -s -X POST "https://api.telegram.org/bot$TOKEN/sendMessage" \
         -d chat_id="$CHAT_ID" \
